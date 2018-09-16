@@ -1,49 +1,25 @@
 <nav >
-    <div *ngIf="applicantOrEmployer; else notApplicant"> 
-       <ul>
-         <li>
-         <a routerLink="Update">
-        <i class="material-icons">add_to_queue</i>
-      </a>
-    </li>
-    <li>
-        <a routerLink="Posting">
-          <i class="material-icons">horizontal_split</i>
-        </a>
-      </li>
-      <li>
-        <a routerLink="Generate">
-          <i class="material-icons">code</i>
-        </a>
-      </li>
-    </ul>
-    
-     </div>
-   <ng-template template #notApplicant> 
-   <ul> 
-      <li>
-          <a routerLink="Post">
-            <i class="material-icons">assignment_returned</i>
-          </a>
-        </li>
-        <li>
-          <a routerLink="Select">
-            <i class="material-icons">account_box</i>
-          </a>
-        </li>
-        <li>
-          <a routerLink="PostingEmployer">
-            <i class="material-icons">code</i>
-          </a>
-        </li>
-      </ul>
-   
-  </ng-template>
-     <ul>    
+    <div> 
+      <img src="assets/1ED3EAA3-2D01-4825-986E-57C08FBE4B95.png">
+        <ul>
+                
+           
+     <li>
+          <a routerLink="Update">
+         <i class="material-icons">add_to_queue</i>
+       </a>
+     </li>
+     <li>
+         <a routerLink="Posting">
+           <i class="material-icons">horizontal_split</i>
+         </a>
+       </li>
        <li>
-        <a routerLink="" (click)="switches()">
-          <i class="material-icons">settings_power</i>
-        </a>
-      </li>
- </ul>
+         <a routerLink="Generate">
+           <i class="material-icons">code</i>
+         </a>
+       </li>
+     </ul>
+     
+      </div>
 </nav>
