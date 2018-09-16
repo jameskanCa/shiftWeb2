@@ -8,21 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
 
-  applicantOrEmployer:boolean;
+  change:boolean;
   constructor() { }
 
   ngOnInit() { 
-    this.applicantOrEmployer=false;
+    this.change=false;
   }
  
 
   switches(){
-    if(this.applicantOrEmployer == true ){
-      this.applicantOrEmployer = false;
-      console.log(this.applicantOrEmployer); 
+    if(this.change == true ){
+      this.change = false;
+  
     }else {
-      this.applicantOrEmployer = true;
-      console.log(this.applicantOrEmployer);
+      this.change = true;
     }
   }
 }
