@@ -8,6 +8,7 @@ import { ItemComponent } from './item/item.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProfileComponent } from './profile/profile.component';
     ItemComponent,
     SidebarComponent,
     ContactsComponent,
-    ProfileComponent
+    ProfileComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule
