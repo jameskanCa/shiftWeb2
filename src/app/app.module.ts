@@ -6,6 +6,7 @@ import { RecordComponent } from './record/record.component';
 import { MapComponent } from './map/map.component';
 import { ItemComponent } from './item/item.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     RecordComponent,
     MapComponent,
     ItemComponent,
-    SidebarComponent
+    SidebarComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule
