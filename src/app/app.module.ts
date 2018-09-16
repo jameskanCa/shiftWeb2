@@ -6,6 +6,7 @@ import { RecordComponent } from './record/record.component';
 import { MapComponent } from './map/map.component';
 import { ItemComponent } from './item/item.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ContactsComponent } from './contacts/contacts.component';
 import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ProfileComponent } from './profile/profile.component';
     MapComponent,
     ItemComponent,
     SidebarComponent,
+    ContactsComponent,
     ProfileComponent
   ],
   imports: [
