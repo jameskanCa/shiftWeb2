@@ -7,6 +7,7 @@ import { MapComponent } from './map/map.component';
 import { ItemComponent } from './item/item.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     MapComponent,
     ItemComponent,
     SidebarComponent,
-    ContactsComponent
+    ContactsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule
