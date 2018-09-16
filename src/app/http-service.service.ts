@@ -2,13 +2,15 @@ import { Injectable } from '@angular/core';
 
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { FirebaseApp } from '../../node_modules/@angular/fire';
+import 'firebase/storage';
 @Injectable({
   providedIn: 'root'
 })
 export class HttpServiceService {
-    items: Observable<any[]>;
+  image: string;
+  constructor(firebaseApp: FirebaseApp) {
+    }
 
-  constructor(db: AngularFirestore) {
-    this.items = db.collection('items').valueChanges();
-   }
+
 }

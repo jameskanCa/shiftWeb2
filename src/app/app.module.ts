@@ -8,15 +8,12 @@ import { ItemComponent } from './item/item.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProfileComponent } from './profile/profile.component';
-<<<<<<< HEAD
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
-=======
 import { RatingComponent } from './rating/rating.component';
->>>>>>> 227b4adb374c16bfffc5c5dc8b25489b2739a725
 
 @NgModule({
   declarations: [
