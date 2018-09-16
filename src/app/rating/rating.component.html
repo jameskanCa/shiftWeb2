@@ -1,9 +1,14 @@
+
 <div>
+    <h1>Rate This Event</h1>
+    <textarea>Time: 7:21 Date: 12/2/2018</textarea>
   <div class="card" style="width: 18rem;">
     <app-item></app-item>
     <div class="card-body">
-      <div align="center"></div><button type="button" class="btn btn-success">Approve</button> &nbsp;&nbsp;
-      <button type="button" class="btn btn-danger">Reject</button>
+      <div align="center"></div><button type="button" class="btn btn-success" (click)="Approval()">
+        Approve</button> &nbsp;&nbsp;
+      <button type="button" class="btn btn-danger" (click)="Dissaprove()">Reject</button>
     </div>
 </div>
+{{text}}
 </div>

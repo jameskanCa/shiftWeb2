@@ -14,7 +14,9 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { RatingComponent } from './rating/rating.component';
-
+import { MainScreenComponent } from './main-screen/main-screen.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { AgmCoreModule} from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,15 +26,18 @@ import { RatingComponent } from './rating/rating.component';
     SidebarComponent,
     ContactsComponent,
     ProfileComponent,
-    RatingComponent
+    RatingComponent,
+    MainScreenComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase,'shift'),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule // imports firebase/storage only needed for storage features
 
+
+    AngularFireStorageModule, AppRoutingModule // imports firebase/storage only needed for storage features
+    , AgmCoreModule.forRoot({apiKey: 'AIzaSyDto-rKAiwBF-dAXkGd562U1pJtJUU3p3Q'})
   ],
   providers: [],
   bootstrap: [AppComponent]

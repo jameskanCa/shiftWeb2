@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rating.component.css']
 })
 export class RatingComponent implements OnInit {
-
+  text:string;
   constructor() { }
 
   ngOnInit() {
+  
   }
 
+  Approval(){
+    this.text = "Approved by Mother";
+  }
+  Dissaprove(){
+    this.text = "Disapproved by Mother";
+  }
 }
